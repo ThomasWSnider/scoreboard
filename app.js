@@ -22,13 +22,33 @@ function awayPlusThree() {
   displayScore()
 }
 
+function homePenalty() {
+  homeScore--
+  displayScore()
+}
+
+function awayPenalty() {
+  awayScore--
+  displayScore()
+}
+
 function displayScore() {
   let homeTeamElement = document.getElementById('homeScore')
   let awayTeamElement = document.getElementById('awayScore')
 
-  homeTeamElement.innerText = `0${homeScore}`
-  awayTeamElement.innerText = `0${awayScore}`
+  if (homeScore < 10) {
+    homeTeamElement.innerText = `0${homeScore}`
+  }
+  else {
+    homeTeamElement.innerText = `${homeScore}`
+  }
 
+  if (awayScore < 10) {
+    awayTeamElement.innerText = `0${awayScore}`
+  }
+  else {
+    awayTeamElement.innerText = `${awayScore}`
+  }
   if (homeScore == 21) {
     window.alert(`Home team wins!`);
     gameOver()

@@ -27,33 +27,37 @@
   <main>
     <div class="container">
       <div class="row justify-content-between">
-        <div class="col-10 d-flex justify-content-between">
+
+        <div class="col-3 d-flex flex-column">
           <h2>Home</h2>
+          <button id="homeBtn" class="btn btn-outline-info text-dark" onclick="homePenalty()">
+            <h3 id="homeScore" class="text-center score-size">00</h3>
+          </button>
+        </div>
+        <div class="col-3 d-flex flex-column">
           <h2>Away</h2>
-        </div>
-        <div class="col-3">
-          <h3 id="homeScore" class="fs-1 text-center">00</h3>
-        </div>
-        <div class="col-3">
-          <h3 id="awayScore" class="fs-1 text-center">00</h3>
+          <button id="awayBtn" class="btn btn-outline-info text-dark" onclick="awayPenalty()">
+            <h3 id="awayScore" class="text-center score-size">00</h3>
+          </button>
         </div>
       </div>
+    </div>
     </div>
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-3">
-          <button id="plusOneBtnHome" onclick="homePlusOne()" class="btn btn-outline-info mb-3">Home +1</button>
+          <button id="plusOneBtnHome" onclick="homePlusOne()" class="btn btn-outline-primary mb-3">Home +1</button>
         </div>
         <div class="col-3">
-          <button id="plusOneBtnAway" onclick="awayPlusOne()" class="btn btn-outline-info mb-3">Away +1</button>
+          <button id="plusOneBtnAway" onclick="awayPlusOne()" class="btn btn-outline-primary mb-3">Away +1</button>
         </div>
       </div>
       <div class="row justify-content-between">
         <div class="col-3">
-          <button id="plusThreeBtnHome" onclick="homePlusThree()" class="btn btn-outline-info mb-3">Home +3</button>
+          <button id="plusThreeBtnHome" onclick="homePlusThree()" class="btn btn-outline-primary mb-3">Home +3</button>
         </div>
         <div class="col-3">
-          <button id="plusThreeBtnAway" onclick="awayPlusThree()" class="btn btn-outline-info mb-3">Away +3</button>
+          <button id="plusThreeBtnAway" onclick="awayPlusThree()" class="btn btn-outline-primary mb-3">Away +3</button>
         </div>
       </div>
     </div>

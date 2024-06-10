@@ -1,3 +1,7 @@
 body {
   background-color: whitesmoke;
 }
+
+.score-size {
+  font-size: 15em;
+}
