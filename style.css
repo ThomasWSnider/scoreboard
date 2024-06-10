@@ -1,7 +1,15 @@
 body {
-  background-color: whitesmoke;
+  background-color: #11208e;
 }
 
 .score-size {
   font-size: 15em;
+}
+
+.button-border {
+  border-color: whitesmoke;
+}
+
+.text-main {
+  color: white;
 }

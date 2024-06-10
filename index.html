@@ -12,13 +12,14 @@
 
 <body>
   <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-11">
-          <h1 class="text-center">The Big Game</h1>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h1 class="text-center text-main">The Big Game</h1>
         </div>
         <div class="col-1">
-          <button id="resetBtn" class="btn btn-outline-danger" onclick="gameReset()">Reset</button>
+          <button id="resetBtn" class="btn button-border btn-outline-danger mt-2 text-main"
+            onclick="gameReset()">Reset</button>
         </div>
       </div>
     </div>
@@ -26,18 +27,17 @@
 
   <main>
     <div class="container">
-      <div class="row justify-content-between">
-
+      <div class="row justify-content-around">
         <div class="col-3 d-flex flex-column">
-          <h2>Home</h2>
-          <button id="homeBtn" class="btn btn-outline-info text-dark" onclick="homePenalty()">
-            <h3 id="homeScore" class="text-center score-size">00</h3>
+          <h2 class="text-center text-main">Home</h2>
+          <button id="homeBtn" class="btn button-border btn-outline-info text-main" onclick="homePenalty()">
+            <h3 id="homeScore" class="text-center score-size text-main">00</h3>
           </button>
         </div>
         <div class="col-3 d-flex flex-column">
-          <h2>Away</h2>
-          <button id="awayBtn" class="btn btn-outline-info text-dark" onclick="awayPenalty()">
-            <h3 id="awayScore" class="text-center score-size">00</h3>
+          <h2 class="text-center">Away</h2>
+          <button id="awayBtn" class="btn button-border btn-outline-info text-main" onclick="awayPenalty()">
+            <h3 id="awayScore" class="text-center score-size text-main">00</h3>
           </button>
         </div>
       </div>
@@ -45,19 +45,25 @@
     </div>
     <div class="container">
       <div class="row justify-content-between">
-        <div class="col-3">
-          <button id="plusOneBtnHome" onclick="homePlusOne()" class="btn btn-outline-primary mb-3">Home +1</button>
+        <div class="col-6">
+          <div class="text-center mt-3">
+            <button id="plusOneBtnHome" onclick="homePlusOne()"
+              class="btn button-border btn-outline-primary text-main px-4 mx-2">Home
+              +1</button>
+            <button id="plusThreeBtnHome" onclick="homePlusThree()"
+              class="btn button-border btn-outline-primary text-main px-4 mx-2">Home
+              +3</button>
+          </div>
         </div>
-        <div class="col-3">
-          <button id="plusOneBtnAway" onclick="awayPlusOne()" class="btn btn-outline-primary mb-3">Away +1</button>
-        </div>
-      </div>
-      <div class="row justify-content-between">
-        <div class="col-3">
-          <button id="plusThreeBtnHome" onclick="homePlusThree()" class="btn btn-outline-primary mb-3">Home +3</button>
-        </div>
-        <div class="col-3">
-          <button id="plusThreeBtnAway" onclick="awayPlusThree()" class="btn btn-outline-primary mb-3">Away +3</button>
+        <div class="col-6">
+          <div class="text-center mt-3">
+            <button id="plusOneBtnAway" onclick="awayPlusOne()"
+              class="btn button-border btn-outline-primary text-main px-4 mx-2">Away
+              +1</button>
+            <button id="plusThreeBtnAway" onclick="awayPlusThree()"
+              class="btn button-border btn-outline-primary text-main px-4 mx-2">Away
+              +3</button>
+          </div>
         </div>
       </div>
     </div>
