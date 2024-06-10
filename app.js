@@ -53,14 +53,16 @@ function displayScore() {
   else {
     awayTeamElement.innerText = `${awayScore}`
   }
+
   if (homeScore >= 21) {
-    window.alert(`Home team wins!`);
     gameOver()
+    setTimeout(homeWins, 100)
   }
   else if (awayScore >= 21) {
-    window.alert(`Away team wins!`);
     gameOver()
+    setTimeout(awayWins, 100)
   }
+
 }
 
 function gameOver() {
@@ -68,11 +70,15 @@ function gameOver() {
   let aob = document.getElementById(`plusOneBtnAway`)
   let htb = document.getElementById(`plusThreeBtnHome`)
   let atb = document.getElementById(`plusThreeBtnAway`)
+  let hb = document.getElementById(`homeBtn`)
+  let ab = document.getElementById(`awayBtn`)
 
   hob.disabled = true;
   aob.disabled = true;
   htb.disabled = true;
   atb.disabled = true;
+  hb.disabled = true;
+  ab.disabled = true;
 }
 
 function gameReset() {
@@ -80,14 +86,26 @@ function gameReset() {
   let aob = document.getElementById(`plusOneBtnAway`)
   let htb = document.getElementById(`plusThreeBtnHome`)
   let atb = document.getElementById(`plusThreeBtnAway`)
+  let hb = document.getElementById(`homeBtn`)
+  let ab = document.getElementById(`awayBtn`)
 
   hob.disabled = false;
   aob.disabled = false;
   htb.disabled = false;
   atb.disabled = false;
+  hb.disabled = false;
+  ab.disabled = false;
 
   homeScore = 0
   awayScore = 0
 
   displayScore()
+}
+
+function homeWins() {
+  window.alert(`Home team wins! Press the Reset Button to play again!`);
+}
+
+function awayWins() {
+  window.alert(`Away team wins! Press the Reseet Button to play again!`);
 }
