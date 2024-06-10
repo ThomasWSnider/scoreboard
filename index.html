@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center">The Big Game</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-10 d-flex justify-content-between">
+          <h2>Home</h2>
+          <h2>Away</h2>
+        </div>
+        <div class="col-3">
+          <h3 id="homeScore" class="fs-1 text-center">00</h3>
+        </div>
+        <div class="col-3">
+          <h3 id="awayScore" class="fs-1 text-center">00</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-3">
+          <button onclick="homePlusOne()" class="btn btn-outline-info mb-3">Home +1</button>
+        </div>
+        <div class="col-3">
+          <button onclick="awayPlusOne()" class="btn btn-outline-info mb-3">Away +1</button>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-3">
+          <button onclick="homePlusThree()" class="btn btn-outline-info mb-3">Home +3</button>
+        </div>
+        <div class="col-3">
+          <button onclick="awayPlusThree()" class="btn btn-outline-info mb-3">Away +3</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
