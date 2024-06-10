@@ -14,8 +14,11 @@
   <header>
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-11">
           <h1 class="text-center">The Big Game</h1>
+        </div>
+        <div class="col-1">
+          <button id="resetBtn" class="btn btn-outline-danger" onclick="gameReset()">Reset</button>
         </div>
       </div>
     </div>
@@ -39,18 +42,18 @@
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-3">
-          <button onclick="homePlusOne()" class="btn btn-outline-info mb-3">Home +1</button>
+          <button id="plusOneBtnHome" onclick="homePlusOne()" class="btn btn-outline-info mb-3">Home +1</button>
         </div>
         <div class="col-3">
-          <button onclick="awayPlusOne()" class="btn btn-outline-info mb-3">Away +1</button>
+          <button id="plusOneBtnAway" onclick="awayPlusOne()" class="btn btn-outline-info mb-3">Away +1</button>
         </div>
       </div>
       <div class="row justify-content-between">
         <div class="col-3">
-          <button onclick="homePlusThree()" class="btn btn-outline-info mb-3">Home +3</button>
+          <button id="plusThreeBtnHome" onclick="homePlusThree()" class="btn btn-outline-info mb-3">Home +3</button>
         </div>
         <div class="col-3">
-          <button onclick="awayPlusThree()" class="btn btn-outline-info mb-3">Away +3</button>
+          <button id="plusThreeBtnAway" onclick="awayPlusThree()" class="btn btn-outline-info mb-3">Away +3</button>
         </div>
       </div>
     </div>
